@@ -227,9 +227,9 @@ function lib:init(ti, dosplash, visiblekey, deleteprevious)
     sidebar.BorderSizePixel = 0
     sidebar.Position = UDim2.new(0.0249653254, 0, 0.181506842, 0)
     sidebar.Size = UDim2.new(0, 233, 0, 463)
-    sidebar.AutomaticCanvasSize = "Y"
+    sidebar.AutomaticCanvasSize = Enum.AutomaticSize.Y -- IMPROVED: Auto-size canvas
     sidebar.CanvasSize = UDim2.new(0, 0, 0, 0)
-    sidebar.ScrollBarThickness = 2
+    sidebar.ScrollBarThickness = 4 -- IMPROVED: Increased thickness for better visibility
 
     local ull_2 = Instance.new("UIListLayout")
     ull_2.Parent = sidebar
@@ -763,8 +763,9 @@ function lib:init(ti, dosplash, visiblekey, deleteprevious)
         workareamain.Position = UDim2.new(0.0393013097, 0, 0.0958904102, 0)
         workareamain.Size = UDim2.new(0, 422, 0, 512)
         workareamain.ZIndex = 3
+        workareamain.AutomaticCanvasSize = Enum.AutomaticSize.Y -- IMPROVED: Auto-size canvas
         workareamain.CanvasSize = UDim2.new(0, 0, 0, 0)
-        workareamain.ScrollBarThickness = 2
+        workareamain.ScrollBarThickness = 4 -- IMPROVED: Increased thickness for better visibility
         workareamain.Visible = false
 
         local ull = Instance.new("UIListLayout")
